@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Time Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    
+    <main class="container">
+        <header>
+            <h1>Meeting Time <span class="gradient-text">Planner</span></h1>
+            <p>Coordinate across time zones seamlessly.</p>
+        </header>
+
+        <section class="card local-time-section">
+            <h2>Your Local Time</h2>
+            <div class="input-group">
+                <div class="input-field">
+                    <label for="local-date">Date</label>
+                    <input type="date" id="local-date">
+                </div>
+                <div class="input-field">
+                    <label for="local-time">Time</label>
+                    <input type="time" id="local-time">
+                </div>
+            </div>
+            <p class="timezone-info" id="local-tz-info">Detected Timezone: <span id="detected-tz">Loading...</span></p>
+        </section>
+
+        <section class="card add-timezone-section">
+            <h2>Add Region</h2>
+            <div class="search-container">
+                <input type="text" id="tz-search" placeholder="Search cities or time zones (e.g. Tokyo, London)..." autocomplete="off">
+                <ul class="dropdown" id="tz-dropdown" hidden></ul>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <h2>Participants' Times</h2>
+            <div id="target-list" class="target-list">
+                <!-- Target timezone cards will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js?v=2"></script>
+</body>
+</html>
