@@ -133,7 +133,8 @@ label {
 
 input[type="time"],
 input[type="date"],
-input[type="text"] {
+input[type="text"],
+select {
     width: 100%;
     padding: 0.75rem 1rem;
     border-radius: 0.75rem;
@@ -148,9 +149,15 @@ input[type="text"] {
 
 input[type="time"]:focus,
 input[type="date"]:focus,
-input[type="text"]:focus {
+input[type="text"]:focus,
+select:focus {
     border-color: var(--accent-2);
     box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+}
+
+select option {
+    background: var(--bg-color);
+    color: var(--text-primary);
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -163,9 +170,13 @@ input[type="text"]:focus {
     color: var(--text-secondary);
 }
 
+.add-timezone-section {
+    position: relative;
+    z-index: 50;
+}
+
 .search-container {
     position: relative;
-    z-index: 20;
 }
 
 .dropdown {
@@ -179,7 +190,7 @@ input[type="text"]:focus {
     border-radius: 0.75rem;
     max-height: 250px;
     overflow-y: auto;
-    z-index: 10;
+    z-index: 60;
     list-style: none;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
@@ -201,6 +212,44 @@ input[type="text"]:focus {
 
 .dropdown li:hover {
     background: rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Scrollbar for Dropdown */
+.dropdown::-webkit-scrollbar {
+    width: 8px;
+}
+.dropdown::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+.dropdown::-webkit-scrollbar-thumb {
+    background: var(--text-secondary);
+    border-radius: 4px;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 0.75rem;
+    border: none;
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s, filter 0.2s;
+    font-family: 'Outfit', sans-serif;
+}
+
+.add-btn:hover {
+    filter: brightness(1.1);
+}
+
+.add-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    filter: none;
 }
 
 .target-list {
@@ -267,24 +316,6 @@ input[type="text"]:focus {
 .remove-btn:hover {
     color: var(--danger);
     background: rgba(239, 68, 68, 0.1);
-}
-
-/* Custom Scrollbar for Dropdown */
-.dropdown::-webkit-scrollbar {
-    width: 8px;
-}
-.dropdown::-webkit-scrollbar-track {
-    background: rgba(0,0,0,0.1);
-    border-radius: 4px;
-}
-.dropdown::-webkit-scrollbar-thumb {
-    background: var(--text-secondary);
-    border-radius: 4px;
-}
-
-.add-timezone-section {
-    position: relative;
-    z-index: 50;
 }
 
 @media (max-width: 480px) {

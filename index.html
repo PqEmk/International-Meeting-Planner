@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Time Planner</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
     <div class="background-elements">
@@ -36,10 +36,37 @@
 
         <section class="card add-timezone-section">
             <h2>Add Region</h2>
-            <div class="search-container">
-                <input type="text" id="tz-search" placeholder="Search cities or time zones (e.g. Tokyo, London)..." autocomplete="off">
-                <ul class="dropdown" id="tz-dropdown" hidden></ul>
+            
+            <div class="search-container" style="margin-bottom: 1.5rem;">
+                <input type="text" id="smart-search" placeholder="Smart Search: Type any city in the world..." autocomplete="off">
+                <ul class="dropdown" id="smart-dropdown" hidden></ul>
             </div>
+
+            <div style="text-align: center; margin-bottom: 1.5rem; color: var(--text-secondary); font-size: 0.85rem; letter-spacing: 1px;">OR BROWSE BY CONTINENT</div>
+
+            <div class="input-group" style="margin-bottom: 0.5rem;">
+                <div class="input-field">
+                    <label>Continent</label>
+                    <select id="sel-continent">
+                        <option value="">All</option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <label>Country</label>
+                    <select id="sel-country">
+                        <option value="">All</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-field">
+                    <label>City / Region</label>
+                    <select id="sel-city">
+                        <option value="">Select a city...</option>
+                    </select>
+                </div>
+            </div>
+            <button id="btn-add" class="add-btn" disabled>Add to Planner</button>
         </section>
 
         <section class="results-section">
@@ -50,6 +77,7 @@
         </section>
     </main>
 
-    <script src="app.js?v=2"></script>
+    <script src="data.js?v=7"></script>
+    <script src="app.js?v=7"></script>
 </body>
 </html>
