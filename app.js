@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const selCity = document.getElementById('sel-city');
     const btnAdd = document.getElementById('btn-add');
     const targetListContainer = document.getElementById('target-list');
+    const btnCopy = document.getElementById('btn-copy');
 
     // Get user's timezone
     const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -229,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
     localTimeInput.addEventListener('input', updateUI);
 
     function addLocation(locationObj) {
-        if (!selectedLocations.some(loc => loc.id === locationObj.id)) {
+        if (!selectedLocations.some(loc => String(loc.id) === String(locationObj.id))) {
             selectedLocations.push(locationObj);
             localStorage.setItem('meetPlanLocations_v2', JSON.stringify(selectedLocations));
             updateUI();
@@ -242,6 +243,8 @@ document.addEventListener('DOMContentLoaded', () => {
         updateUI();
     }
 
+    let draggedItemIndex = null;
+
     function updateUI() {
         if (!localDateInput.value || !localTimeInput.value) return;
 
@@ -250,12 +253,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (selectedLocations.length === 0) {
             targetListContainer.innerHTML = '<p style="color: var(--text-secondary); text-align: center;">Add regions to see converted times.</p>';
+            btnCopy.style.display = 'none';
             return;
         }
-
+        
+        btnCopy.style.display = 'flex';
         targetListContainer.innerHTML = '';
         
-        selectedLocations.forEach(loc => {
+        selectedLocations.forEach((loc, index) => {
             try {
                 const timeFormatter = new Intl.DateTimeFormat('en-US', {
                     timeZone: loc.timezone, hour: 'numeric', minute: '2-digit', hour12: true
@@ -275,17 +280,60 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const card = document.createElement('div');
                 card.className = 'target-card';
+                card.draggable = true;
+                
+                // Drag & Drop logic
+                card.addEventListener('dragstart', (e) => {
+                    draggedItemIndex = index;
+                    e.dataTransfer.effectAllowed = 'move';
+                    setTimeout(() => card.classList.add('dragging'), 0);
+                });
+                
+                card.addEventListener('dragend', () => {
+                    draggedItemIndex = null;
+                    card.classList.remove('dragging');
+                    Array.from(targetListContainer.children).forEach(c => c.style.border = '');
+                });
+
+                card.addEventListener('dragover', (e) => {
+                    e.preventDefault();
+                    e.dataTransfer.dropEffect = 'move';
+                });
+
+                card.addEventListener('dragenter', (e) => {
+                    e.preventDefault();
+                    if (draggedItemIndex !== index) {
+                        card.style.border = '1px dashed var(--accent-1)';
+                    }
+                });
+
+                card.addEventListener('dragleave', () => {
+                    card.style.border = '1px solid var(--card-border)';
+                    card.style.borderLeft = '4px solid var(--accent-1)';
+                });
+
+                card.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    if (draggedItemIndex !== null && draggedItemIndex !== index) {
+                        const draggedItem = selectedLocations[draggedItemIndex];
+                        selectedLocations.splice(draggedItemIndex, 1);
+                        selectedLocations.splice(index, 0, draggedItem);
+                        localStorage.setItem('meetPlanLocations_v2', JSON.stringify(selectedLocations));
+                        updateUI();
+                    }
+                });
+
                 card.innerHTML = `
-                    <div class="target-info">
+                    <div class="target-info" style="pointer-events: none;">
                         <h3>${loc.name}</h3>
                         <p>${loc.country} &middot; <span style="opacity: 0.7; font-size: 0.8rem">${loc.timezone.split('/').pop().replace(/_/g, ' ')} Time</span></p>
                     </div>
                     <div style="display: flex; align-items: center;">
-                        <div class="target-time">
+                        <div class="target-time" style="pointer-events: none;">
                             <div class="time">${formattedTime} <span style="font-size: 1rem; color: var(--text-secondary); margin-left: 0.25rem;">${tzAbbr}</span></div>
                             <div class="date">${formattedDate}</div>
                         </div>
-                        <button class="remove-btn" onclick="removeLocation('${loc.id}')" aria-label="Remove">
+                        <button class="remove-btn" onclick="removeLocation('${loc.id}')" aria-label="Remove" title="Remove">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                         </button>
                     </div>
@@ -296,6 +344,35 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    btnCopy.addEventListener('click', () => {
+        const dateObj = new Date(`${localDateInput.value}T${localTimeInput.value}`);
+        
+        let text = "📅 Meeting Schedule:\n\n";
+        
+        // Add Local
+        const locTimeFormatter = new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
+        const locDateFormatter = new Intl.DateTimeFormat('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+        text += `• Your Local Time: ${locTimeFormatter.format(dateObj)} on ${locDateFormatter.format(dateObj)}\n`;
+        
+        // Add Participants
+        selectedLocations.forEach(loc => {
+            const timeFormatter = new Intl.DateTimeFormat('en-US', { timeZone: loc.timezone, hour: 'numeric', minute: '2-digit', hour12: true });
+            const dateFormatter = new Intl.DateTimeFormat('en-US', { timeZone: loc.timezone, weekday: 'short', month: 'short', day: 'numeric' });
+            const tzAbbrFormatter = new Intl.DateTimeFormat('en-US', { timeZone: loc.timezone, timeZoneName: 'short' });
+            const tzAbbr = tzAbbrFormatter.formatToParts(dateObj).find(p => p.type === 'timeZoneName')?.value || '';
+            
+            text += `• ${loc.name}, ${loc.country}: ${timeFormatter.format(dateObj)} on ${dateFormatter.format(dateObj)} (${tzAbbr})\n`;
+        });
+        
+        navigator.clipboard.writeText(text).then(() => {
+            const originalHTML = btnCopy.innerHTML;
+            btnCopy.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><polyline points="20 6 9 17 4 12"></polyline></svg> Copied!';
+            setTimeout(() => {
+                btnCopy.innerHTML = originalHTML;
+            }, 2000);
+        });
+    });
 
     updateUI();
 });

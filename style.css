@@ -170,6 +170,14 @@ select option {
     color: var(--text-secondary);
 }
 
+.dst-warning {
+    font-size: 0.75rem;
+    color: var(--accent-1);
+    opacity: 0.9;
+    max-width: 60%;
+    text-align: right;
+}
+
 .add-timezone-section {
     position: relative;
     z-index: 50;
@@ -252,6 +260,23 @@ select option {
     filter: none;
 }
 
+.action-btn {
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--text-primary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: 'Outfit', sans-serif;
+}
+.action-btn:hover {
+    background: rgba(255,255,255,0.15);
+}
+
 .target-list {
     display: flex;
     flex-direction: column;
@@ -270,11 +295,22 @@ select option {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: grab;
+}
+
+.target-card:active {
+    cursor: grabbing;
 }
 
 .target-card:hover {
     transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.target-card.dragging {
+    opacity: 0.5;
+    transform: scale(0.98);
 }
 
 .target-info h3 {
@@ -324,5 +360,10 @@ select option {
     }
     .container {
         padding: 1rem;
+    }
+    .dst-warning {
+        max-width: 100%;
+        text-align: left;
+        margin-top: 0.5rem;
     }
 }

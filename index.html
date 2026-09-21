@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Time Planner</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
     <div class="background-elements">
@@ -31,11 +31,17 @@
                     <input type="time" id="local-time">
                 </div>
             </div>
-            <p class="timezone-info" id="local-tz-info">Detected Timezone: <span id="detected-tz">Loading...</span></p>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 0.5rem;">
+                <p class="timezone-info" id="local-tz-info">Detected: <span id="detected-tz">Loading...</span></p>
+                <p class="dst-warning">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                    Pick the exact date to auto-adjust for Daylight Saving Time.
+                </p>
+            </div>
         </section>
 
         <section class="card add-timezone-section">
-            <h2>Add Region</h2>
+            <h2>Add Region/Country/City</h2>
             
             <div class="search-container" style="margin-bottom: 1.5rem;">
                 <input type="text" id="smart-search" placeholder="Smart Search: Type any city in the world..." autocomplete="off">
@@ -70,14 +76,20 @@
         </section>
 
         <section class="results-section">
-            <h2>Participants' Times</h2>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <h2 style="margin-bottom: 0;">Participants' Times</h2>
+                <button id="btn-copy" class="action-btn" style="display: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    Copy Schedule
+                </button>
+            </div>
             <div id="target-list" class="target-list">
                 <!-- Target timezone cards will be injected here -->
             </div>
         </section>
     </main>
 
-    <script src="data.js?v=7"></script>
-    <script src="app.js?v=7"></script>
+    <script src="data.js?v=9"></script>
+    <script src="app.js?v=9"></script>
 </body>
 </html>

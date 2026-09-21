@@ -7,11 +7,86 @@ const tzData = {
         "timezone": "Africa/Algiers"
       }
     ],
+    "Angola": [
+      {
+        "id": "Africa/Lagos",
+        "name": "Lagos",
+        "timezone": "Africa/Lagos"
+      }
+    ],
+    "Benin": [
+      {
+        "id": "Africa/Lagos",
+        "name": "Lagos",
+        "timezone": "Africa/Lagos"
+      }
+    ],
+    "Botswana": [
+      {
+        "id": "Africa/Maputo",
+        "name": "Maputo",
+        "timezone": "Africa/Maputo"
+      }
+    ],
+    "Burkina Faso": [
+      {
+        "id": "Africa/Abidjan",
+        "name": "Abidjan",
+        "timezone": "Africa/Abidjan"
+      }
+    ],
+    "Burundi": [
+      {
+        "id": "Africa/Maputo",
+        "name": "Maputo",
+        "timezone": "Africa/Maputo"
+      }
+    ],
+    "Cameroon": [
+      {
+        "id": "Africa/Lagos",
+        "name": "Lagos",
+        "timezone": "Africa/Lagos"
+      }
+    ],
+    "Central African Republic": [
+      {
+        "id": "Africa/Lagos",
+        "name": "Lagos",
+        "timezone": "Africa/Lagos"
+      }
+    ],
     "Chad": [
       {
         "id": "Africa/Ndjamena",
         "name": "Ndjamena",
         "timezone": "Africa/Ndjamena"
+      }
+    ],
+    "Comoros": [
+      {
+        "id": "Africa/Nairobi",
+        "name": "Nairobi",
+        "timezone": "Africa/Nairobi"
+      }
+    ],
+    "Democratic Republic of the Congo": [
+      {
+        "id": "Africa/Lagos",
+        "name": "Lagos",
+        "timezone": "Africa/Lagos"
+      },
+      {
+        "id": "Africa/Maputo",
+        "name": "Maputo",
+        "timezone": "Africa/Maputo"
+      }
+    ],
+    "Djibouti": [
+      {
+        "id": "Africa/Nairobi",
+        "name": "Nairobi",
+        "timezone": "Africa/Nairobi"
       }
     ],
     "Egypt": [
@@ -21,11 +96,74 @@ const tzData = {
         "timezone": "Africa/Cairo"
       }
     ],
+    "Equatorial Guinea": [
+      {
+        "id": "Africa/Lagos",
+        "name": "Lagos",
+        "timezone": "Africa/Lagos"
+      }
+    ],
+    "Eritrea": [
+      {
+        "id": "Africa/Nairobi",
+        "name": "Nairobi",
+        "timezone": "Africa/Nairobi"
+      }
+    ],
+    "Eswatini": [
+      {
+        "id": "Africa/Johannesburg",
+        "name": "Johannesburg",
+        "timezone": "Africa/Johannesburg"
+      }
+    ],
+    "Ethiopia": [
+      {
+        "id": "Africa/Nairobi",
+        "name": "Nairobi",
+        "timezone": "Africa/Nairobi"
+      }
+    ],
+    "Gabon": [
+      {
+        "id": "Africa/Lagos",
+        "name": "Lagos",
+        "timezone": "Africa/Lagos"
+      }
+    ],
+    "Gambia": [
+      {
+        "id": "Africa/Abidjan",
+        "name": "Abidjan",
+        "timezone": "Africa/Abidjan"
+      }
+    ],
+    "Ghana": [
+      {
+        "id": "Africa/Abidjan",
+        "name": "Abidjan",
+        "timezone": "Africa/Abidjan"
+      }
+    ],
+    "Guinea": [
+      {
+        "id": "Africa/Abidjan",
+        "name": "Abidjan",
+        "timezone": "Africa/Abidjan"
+      }
+    ],
     "Guinea-Bissau": [
       {
         "id": "Africa/Bissau",
         "name": "Bissau",
         "timezone": "Africa/Bissau"
+      }
+    ],
+    "Iceland": [
+      {
+        "id": "Africa/Abidjan",
+        "name": "Abidjan",
+        "timezone": "Africa/Abidjan"
       }
     ],
     "Ivory Coast": [
@@ -42,6 +180,13 @@ const tzData = {
         "timezone": "Africa/Nairobi"
       }
     ],
+    "Lesotho": [
+      {
+        "id": "Africa/Johannesburg",
+        "name": "Johannesburg",
+        "timezone": "Africa/Johannesburg"
+      }
+    ],
     "Liberia": [
       {
         "id": "Africa/Monrovia",
@@ -54,6 +199,41 @@ const tzData = {
         "id": "Africa/Tripoli",
         "name": "Tripoli",
         "timezone": "Africa/Tripoli"
+      }
+    ],
+    "Madagascar": [
+      {
+        "id": "Africa/Nairobi",
+        "name": "Nairobi",
+        "timezone": "Africa/Nairobi"
+      }
+    ],
+    "Malawi": [
+      {
+        "id": "Africa/Maputo",
+        "name": "Maputo",
+        "timezone": "Africa/Maputo"
+      }
+    ],
+    "Mali": [
+      {
+        "id": "Africa/Abidjan",
+        "name": "Abidjan",
+        "timezone": "Africa/Abidjan"
+      }
+    ],
+    "Mauritania": [
+      {
+        "id": "Africa/Abidjan",
+        "name": "Abidjan",
+        "timezone": "Africa/Abidjan"
+      }
+    ],
+    "Mayotte": [
+      {
+        "id": "Africa/Nairobi",
+        "name": "Nairobi",
+        "timezone": "Africa/Nairobi"
       }
     ],
     "Morocco": [
@@ -77,6 +257,13 @@ const tzData = {
         "timezone": "Africa/Windhoek"
       }
     ],
+    "Niger": [
+      {
+        "id": "Africa/Lagos",
+        "name": "Lagos",
+        "timezone": "Africa/Lagos"
+      }
+    ],
     "Nigeria": [
       {
         "id": "Africa/Lagos",
@@ -84,11 +271,53 @@ const tzData = {
         "timezone": "Africa/Lagos"
       }
     ],
+    "Republic of the Congo": [
+      {
+        "id": "Africa/Lagos",
+        "name": "Lagos",
+        "timezone": "Africa/Lagos"
+      }
+    ],
+    "Rwanda": [
+      {
+        "id": "Africa/Maputo",
+        "name": "Maputo",
+        "timezone": "Africa/Maputo"
+      }
+    ],
+    "Saint Helena, Ascension and Tristan da Cunha": [
+      {
+        "id": "Africa/Abidjan",
+        "name": "Abidjan",
+        "timezone": "Africa/Abidjan"
+      }
+    ],
     "Sao Tome and Principe": [
       {
         "id": "Africa/Sao_Tome",
         "name": "Sao Tome",
         "timezone": "Africa/Sao_Tome"
+      }
+    ],
+    "Senegal": [
+      {
+        "id": "Africa/Abidjan",
+        "name": "Abidjan",
+        "timezone": "Africa/Abidjan"
+      }
+    ],
+    "Sierra Leone": [
+      {
+        "id": "Africa/Abidjan",
+        "name": "Abidjan",
+        "timezone": "Africa/Abidjan"
+      }
+    ],
+    "Somalia": [
+      {
+        "id": "Africa/Nairobi",
+        "name": "Nairobi",
+        "timezone": "Africa/Nairobi"
       }
     ],
     "South Africa": [
@@ -119,11 +348,32 @@ const tzData = {
         "timezone": "Africa/Khartoum"
       }
     ],
+    "Tanzania": [
+      {
+        "id": "Africa/Nairobi",
+        "name": "Nairobi",
+        "timezone": "Africa/Nairobi"
+      }
+    ],
+    "Togo": [
+      {
+        "id": "Africa/Abidjan",
+        "name": "Abidjan",
+        "timezone": "Africa/Abidjan"
+      }
+    ],
     "Tunisia": [
       {
         "id": "Africa/Tunis",
         "name": "Tunis",
         "timezone": "Africa/Tunis"
+      }
+    ],
+    "Uganda": [
+      {
+        "id": "Africa/Nairobi",
+        "name": "Nairobi",
+        "timezone": "Africa/Nairobi"
       }
     ],
     "Western Sahara": [
@@ -132,9 +382,37 @@ const tzData = {
         "name": "El Aaiun",
         "timezone": "Africa/El_Aaiun"
       }
+    ],
+    "Zambia": [
+      {
+        "id": "Africa/Maputo",
+        "name": "Maputo",
+        "timezone": "Africa/Maputo"
+      }
+    ],
+    "Zimbabwe": [
+      {
+        "id": "Africa/Maputo",
+        "name": "Maputo",
+        "timezone": "Africa/Maputo"
+      }
     ]
   },
   "Americas": {
+    "Anguilla": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
+    ],
+    "Antigua and Barbuda": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
+    ],
     "Argentina": [
       {
         "id": "America/Argentina/Buenos_Aires",
@@ -195,6 +473,20 @@ const tzData = {
         "id": "America/Argentina/Ushuaia",
         "name": "Argentina Ushuaia",
         "timezone": "America/Argentina/Ushuaia"
+      }
+    ],
+    "Aruba": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
+    ],
+    "Bahamas": [
+      {
+        "id": "America/Toronto",
+        "name": "Toronto",
+        "timezone": "America/Toronto"
       }
     ],
     "Barbados": [
@@ -357,6 +649,21 @@ const tzData = {
         "timezone": "America/Moncton"
       },
       {
+        "id": "America/Panama",
+        "name": "Panama",
+        "timezone": "America/Panama"
+      },
+      {
+        "id": "America/Phoenix",
+        "name": "Phoenix",
+        "timezone": "America/Phoenix"
+      },
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      },
+      {
         "id": "America/Rankin_Inlet",
         "name": "Rankin Inlet",
         "timezone": "America/Rankin_Inlet"
@@ -402,6 +709,20 @@ const tzData = {
         "timezone": "America/Winnipeg"
       }
     ],
+    "Caribbean Netherlands": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
+    ],
+    "Cayman Islands": [
+      {
+        "id": "America/Panama",
+        "name": "Panama",
+        "timezone": "America/Panama"
+      }
+    ],
     "Chile": [
       {
         "id": "America/Coyhaique",
@@ -438,6 +759,20 @@ const tzData = {
         "id": "America/Havana",
         "name": "Havana",
         "timezone": "America/Havana"
+      }
+    ],
+    "Curaçao": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
+    ],
+    "Dominica": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
       }
     ],
     "Dominican Republic": [
@@ -488,6 +823,20 @@ const tzData = {
         "id": "America/Thule",
         "name": "Thule",
         "timezone": "America/Thule"
+      }
+    ],
+    "Grenada": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
+    ],
+    "Guadeloupe": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
       }
     ],
     "Guatemala": [
@@ -594,6 +943,13 @@ const tzData = {
         "timezone": "America/Tijuana"
       }
     ],
+    "Montserrat": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
+    ],
     "Nicaragua": [
       {
         "id": "America/Managua",
@@ -629,6 +985,34 @@ const tzData = {
         "timezone": "America/Puerto_Rico"
       }
     ],
+    "Saint Barthélemy": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
+    ],
+    "Saint Kitts and Nevis": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
+    ],
+    "Saint Lucia": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
+    ],
+    "Saint Martin": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
+    ],
     "Saint Pierre and Miquelon": [
       {
         "id": "America/Miquelon",
@@ -636,11 +1020,32 @@ const tzData = {
         "timezone": "America/Miquelon"
       }
     ],
+    "Saint Vincent and the Grenadines": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
+    ],
+    "Sint Maarten": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
+    ],
     "Suriname": [
       {
         "id": "America/Paramaribo",
         "name": "Paramaribo",
         "timezone": "America/Paramaribo"
+      }
+    ],
+    "Trinidad and Tobago": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
       }
     ],
     "Turks and Caicos Islands": [
@@ -805,6 +1210,20 @@ const tzData = {
         "name": "Caracas",
         "timezone": "America/Caracas"
       }
+    ],
+    "Virgin Islands (UK)": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
+    ],
+    "Virgin Islands (US)": [
+      {
+        "id": "America/Puerto_Rico",
+        "name": "Puerto Rico",
+        "timezone": "America/Puerto_Rico"
+      }
     ]
   },
   "Antarctica": {
@@ -861,6 +1280,18 @@ const tzData = {
         "timezone": "Asia/Kabul"
       }
     ],
+    "Antarctica": [
+      {
+        "id": "Asia/Riyadh",
+        "name": "Riyadh",
+        "timezone": "Asia/Riyadh"
+      },
+      {
+        "id": "Asia/Singapore",
+        "name": "Singapore",
+        "timezone": "Asia/Singapore"
+      }
+    ],
     "Armenia": [
       {
         "id": "Asia/Yerevan",
@@ -868,11 +1299,25 @@ const tzData = {
         "timezone": "Asia/Yerevan"
       }
     ],
+    "Australia": [
+      {
+        "id": "Asia/Tokyo",
+        "name": "Tokyo",
+        "timezone": "Asia/Tokyo"
+      }
+    ],
     "Azerbaijan": [
       {
         "id": "Asia/Baku",
         "name": "Baku",
         "timezone": "Asia/Baku"
+      }
+    ],
+    "Bahrain": [
+      {
+        "id": "Asia/Qatar",
+        "name": "Qatar",
+        "timezone": "Asia/Qatar"
       }
     ],
     "Bangladesh": [
@@ -889,6 +1334,20 @@ const tzData = {
         "timezone": "Asia/Thimphu"
       }
     ],
+    "Brunei": [
+      {
+        "id": "Asia/Kuching",
+        "name": "Kuching",
+        "timezone": "Asia/Kuching"
+      }
+    ],
+    "Cambodia": [
+      {
+        "id": "Asia/Bangkok",
+        "name": "Bangkok",
+        "timezone": "Asia/Bangkok"
+      }
+    ],
     "China": [
       {
         "id": "Asia/Shanghai",
@@ -901,6 +1360,20 @@ const tzData = {
         "timezone": "Asia/Urumqi"
       }
     ],
+    "Christmas Island": [
+      {
+        "id": "Asia/Bangkok",
+        "name": "Bangkok",
+        "timezone": "Asia/Bangkok"
+      }
+    ],
+    "Cocos Islands": [
+      {
+        "id": "Asia/Yangon",
+        "name": "Yangon",
+        "timezone": "Asia/Yangon"
+      }
+    ],
     "Cyprus": [
       {
         "id": "Asia/Famagusta",
@@ -911,6 +1384,13 @@ const tzData = {
         "id": "Asia/Nicosia",
         "name": "Nicosia",
         "timezone": "Asia/Nicosia"
+      }
+    ],
+    "French Southern Territories": [
+      {
+        "id": "Asia/Dubai",
+        "name": "Dubai",
+        "timezone": "Asia/Dubai"
       }
     ],
     "Georgia": [
@@ -1028,11 +1508,25 @@ const tzData = {
         "timezone": "Asia/Qostanay"
       }
     ],
+    "Kuwait": [
+      {
+        "id": "Asia/Riyadh",
+        "name": "Riyadh",
+        "timezone": "Asia/Riyadh"
+      }
+    ],
     "Kyrgyzstan": [
       {
         "id": "Asia/Bishkek",
         "name": "Bishkek",
         "timezone": "Asia/Bishkek"
+      }
+    ],
+    "Laos": [
+      {
+        "id": "Asia/Bangkok",
+        "name": "Bangkok",
+        "timezone": "Asia/Bangkok"
       }
     ],
     "Lebanon": [
@@ -1054,6 +1548,11 @@ const tzData = {
         "id": "Asia/Kuching",
         "name": "Kuching",
         "timezone": "Asia/Kuching"
+      },
+      {
+        "id": "Asia/Singapore",
+        "name": "Singapore",
+        "timezone": "Asia/Singapore"
       }
     ],
     "Mongolia": [
@@ -1087,6 +1586,13 @@ const tzData = {
         "id": "Asia/Pyongyang",
         "name": "Pyongyang",
         "timezone": "Asia/Pyongyang"
+      }
+    ],
+    "Oman": [
+      {
+        "id": "Asia/Dubai",
+        "name": "Dubai",
+        "timezone": "Asia/Dubai"
       }
     ],
     "Pakistan": [
@@ -1214,11 +1720,25 @@ const tzData = {
         "timezone": "Asia/Vladivostok"
       }
     ],
+    "Réunion": [
+      {
+        "id": "Asia/Dubai",
+        "name": "Dubai",
+        "timezone": "Asia/Dubai"
+      }
+    ],
     "Saudi Arabia": [
       {
         "id": "Asia/Riyadh",
         "name": "Riyadh",
         "timezone": "Asia/Riyadh"
+      }
+    ],
+    "Seychelles": [
+      {
+        "id": "Asia/Dubai",
+        "name": "Dubai",
+        "timezone": "Asia/Dubai"
       }
     ],
     "Singapore": [
@@ -1305,9 +1825,21 @@ const tzData = {
     ],
     "Vietnam": [
       {
+        "id": "Asia/Bangkok",
+        "name": "Bangkok",
+        "timezone": "Asia/Bangkok"
+      },
+      {
         "id": "Asia/Ho_Chi_Minh",
         "name": "Ho Chi Minh",
         "timezone": "Asia/Ho_Chi_Minh"
+      }
+    ],
+    "Yemen": [
+      {
+        "id": "Asia/Riyadh",
+        "name": "Riyadh",
+        "timezone": "Asia/Riyadh"
       }
     ]
   },
@@ -1462,6 +1994,13 @@ const tzData = {
         "timezone": "Europe/Brussels"
       }
     ],
+    "Bosnia and Herzegovina": [
+      {
+        "id": "Europe/Belgrade",
+        "name": "Belgrade",
+        "timezone": "Europe/Belgrade"
+      }
+    ],
     "Bulgaria": [
       {
         "id": "Europe/Sofia",
@@ -1469,11 +2008,25 @@ const tzData = {
         "timezone": "Europe/Sofia"
       }
     ],
+    "Croatia": [
+      {
+        "id": "Europe/Belgrade",
+        "name": "Belgrade",
+        "timezone": "Europe/Belgrade"
+      }
+    ],
     "Czechia": [
       {
         "id": "Europe/Prague",
         "name": "Prague",
         "timezone": "Europe/Prague"
+      }
+    ],
+    "Denmark": [
+      {
+        "id": "Europe/Berlin",
+        "name": "Berlin",
+        "timezone": "Europe/Berlin"
       }
     ],
     "Estonia": [
@@ -1502,6 +2055,11 @@ const tzData = {
         "id": "Europe/Berlin",
         "name": "Berlin",
         "timezone": "Europe/Berlin"
+      },
+      {
+        "id": "Europe/Zurich",
+        "name": "Zurich",
+        "timezone": "Europe/Zurich"
       }
     ],
     "Gibraltar": [
@@ -1518,6 +2076,20 @@ const tzData = {
         "timezone": "Europe/Athens"
       }
     ],
+    "Guernsey": [
+      {
+        "id": "Europe/London",
+        "name": "London",
+        "timezone": "Europe/London"
+      }
+    ],
+    "Holy See": [
+      {
+        "id": "Europe/Rome",
+        "name": "Rome",
+        "timezone": "Europe/Rome"
+      }
+    ],
     "Hungary": [
       {
         "id": "Europe/Budapest",
@@ -1532,11 +2104,25 @@ const tzData = {
         "timezone": "Europe/Dublin"
       }
     ],
+    "Isle of Man": [
+      {
+        "id": "Europe/London",
+        "name": "London",
+        "timezone": "Europe/London"
+      }
+    ],
     "Italy": [
       {
         "id": "Europe/Rome",
         "name": "Rome",
         "timezone": "Europe/Rome"
+      }
+    ],
+    "Jersey": [
+      {
+        "id": "Europe/London",
+        "name": "London",
+        "timezone": "Europe/London"
       }
     ],
     "Latvia": [
@@ -1546,11 +2132,25 @@ const tzData = {
         "timezone": "Europe/Riga"
       }
     ],
+    "Liechtenstein": [
+      {
+        "id": "Europe/Zurich",
+        "name": "Zurich",
+        "timezone": "Europe/Zurich"
+      }
+    ],
     "Lithuania": [
       {
         "id": "Europe/Vilnius",
         "name": "Vilnius",
         "timezone": "Europe/Vilnius"
+      }
+    ],
+    "Luxembourg": [
+      {
+        "id": "Europe/Brussels",
+        "name": "Brussels",
+        "timezone": "Europe/Brussels"
       }
     ],
     "Malta": [
@@ -1565,6 +2165,41 @@ const tzData = {
         "id": "Europe/Chisinau",
         "name": "Chisinau",
         "timezone": "Europe/Chisinau"
+      }
+    ],
+    "Monaco": [
+      {
+        "id": "Europe/Paris",
+        "name": "Paris",
+        "timezone": "Europe/Paris"
+      }
+    ],
+    "Montenegro": [
+      {
+        "id": "Europe/Belgrade",
+        "name": "Belgrade",
+        "timezone": "Europe/Belgrade"
+      }
+    ],
+    "Netherlands": [
+      {
+        "id": "Europe/Brussels",
+        "name": "Brussels",
+        "timezone": "Europe/Brussels"
+      }
+    ],
+    "North Macedonia": [
+      {
+        "id": "Europe/Belgrade",
+        "name": "Belgrade",
+        "timezone": "Europe/Belgrade"
+      }
+    ],
+    "Norway": [
+      {
+        "id": "Europe/Berlin",
+        "name": "Berlin",
+        "timezone": "Europe/Berlin"
       }
     ],
     "Poland": [
@@ -1635,7 +2270,28 @@ const tzData = {
         "timezone": "Europe/Volgograd"
       }
     ],
+    "San Marino": [
+      {
+        "id": "Europe/Rome",
+        "name": "Rome",
+        "timezone": "Europe/Rome"
+      }
+    ],
     "Serbia": [
+      {
+        "id": "Europe/Belgrade",
+        "name": "Belgrade",
+        "timezone": "Europe/Belgrade"
+      }
+    ],
+    "Slovakia": [
+      {
+        "id": "Europe/Prague",
+        "name": "Prague",
+        "timezone": "Europe/Prague"
+      }
+    ],
+    "Slovenia": [
       {
         "id": "Europe/Belgrade",
         "name": "Belgrade",
@@ -1647,6 +2303,20 @@ const tzData = {
         "id": "Europe/Madrid",
         "name": "Madrid",
         "timezone": "Europe/Madrid"
+      }
+    ],
+    "Svalbard and Jan Mayen": [
+      {
+        "id": "Europe/Berlin",
+        "name": "Berlin",
+        "timezone": "Europe/Berlin"
+      }
+    ],
+    "Sweden": [
+      {
+        "id": "Europe/Berlin",
+        "name": "Berlin",
+        "timezone": "Europe/Berlin"
       }
     ],
     "Switzerland": [
@@ -1668,6 +2338,11 @@ const tzData = {
         "id": "Europe/Kyiv",
         "name": "Kyiv",
         "timezone": "Europe/Kyiv"
+      },
+      {
+        "id": "Europe/Simferopol",
+        "name": "Simferopol",
+        "timezone": "Europe/Simferopol"
       }
     ],
     "United Kingdom": [
@@ -1675,6 +2350,13 @@ const tzData = {
         "id": "Europe/London",
         "name": "London",
         "timezone": "Europe/London"
+      }
+    ],
+    "Åland Islands": [
+      {
+        "id": "Europe/Helsinki",
+        "name": "Helsinki",
+        "timezone": "Europe/Helsinki"
       }
     ]
   },
@@ -1684,6 +2366,13 @@ const tzData = {
         "id": "Indian/Chagos",
         "name": "Chagos",
         "timezone": "Indian/Chagos"
+      }
+    ],
+    "French Southern Territories": [
+      {
+        "id": "Indian/Maldives",
+        "name": "Maldives",
+        "timezone": "Indian/Maldives"
       }
     ],
     "Maldives": [
@@ -1707,6 +2396,18 @@ const tzData = {
         "id": "Pacific/Pago_Pago",
         "name": "Pago Pago",
         "timezone": "Pacific/Pago_Pago"
+      }
+    ],
+    "Antarctica": [
+      {
+        "id": "Pacific/Auckland",
+        "name": "Auckland",
+        "timezone": "Pacific/Auckland"
+      },
+      {
+        "id": "Pacific/Port_Moresby",
+        "name": "Port Moresby",
+        "timezone": "Pacific/Port_Moresby"
       }
     ],
     "Chile": [
@@ -1783,13 +2484,28 @@ const tzData = {
         "id": "Pacific/Kwajalein",
         "name": "Kwajalein",
         "timezone": "Pacific/Kwajalein"
+      },
+      {
+        "id": "Pacific/Tarawa",
+        "name": "Tarawa",
+        "timezone": "Pacific/Tarawa"
       }
     ],
     "Micronesia": [
       {
+        "id": "Pacific/Guadalcanal",
+        "name": "Guadalcanal",
+        "timezone": "Pacific/Guadalcanal"
+      },
+      {
         "id": "Pacific/Kosrae",
         "name": "Kosrae",
         "timezone": "Pacific/Kosrae"
+      },
+      {
+        "id": "Pacific/Port_Moresby",
+        "name": "Port Moresby",
+        "timezone": "Pacific/Port_Moresby"
       }
     ],
     "Nauru": [
@@ -1830,6 +2546,13 @@ const tzData = {
         "id": "Pacific/Norfolk",
         "name": "Norfolk",
         "timezone": "Pacific/Norfolk"
+      }
+    ],
+    "Northern Mariana Islands": [
+      {
+        "id": "Pacific/Guam",
+        "name": "Guam",
+        "timezone": "Pacific/Guam"
       }
     ],
     "Palau": [
@@ -1886,6 +2609,25 @@ const tzData = {
         "timezone": "Pacific/Tongatapu"
       }
     ],
+    "Tuvalu": [
+      {
+        "id": "Pacific/Tarawa",
+        "name": "Tarawa",
+        "timezone": "Pacific/Tarawa"
+      }
+    ],
+    "United States Minor Outlying Islands": [
+      {
+        "id": "Pacific/Pago_Pago",
+        "name": "Pago Pago",
+        "timezone": "Pacific/Pago_Pago"
+      },
+      {
+        "id": "Pacific/Tarawa",
+        "name": "Tarawa",
+        "timezone": "Pacific/Tarawa"
+      }
+    ],
     "United States of America": [
       {
         "id": "Pacific/Honolulu",
@@ -1898,6 +2640,13 @@ const tzData = {
         "id": "Pacific/Efate",
         "name": "Efate",
         "timezone": "Pacific/Efate"
+      }
+    ],
+    "Wallis and Futuna": [
+      {
+        "id": "Pacific/Tarawa",
+        "name": "Tarawa",
+        "timezone": "Pacific/Tarawa"
       }
     ]
   }
